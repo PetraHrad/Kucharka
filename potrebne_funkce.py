@@ -40,7 +40,7 @@ def kontrola_veku():
 
 
 def kontrola_emailu():
-    email = input("Zadej svůj email:")
+    email = input("Zadej svůj email: ")
     if email.__contains__('@') and email.__contains__('.'):
         print("Email je v pořádku. Můžete pokračovat dál")
     else:

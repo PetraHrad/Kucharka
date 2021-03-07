@@ -33,12 +33,20 @@ def prochazeni_kucharky():
         else:
             print(f"Váš výběr je recept číslo {vyber}.Děkuji")
             vyber -= 1
-            return recepty[list_nazev_receptu[vyber]]
+            return str(recepty[list_nazev_receptu[vyber]])
 
 
 print(prochazeni_kucharky())
 
-def zapis_do_worpad():
+
+#def zapis_do_worpad(in_recept):
+ #   with open("recept.txt", "a") as myFile:
+   #     myFile.write(in_recept)
+    #    myFile.close()
+
+
+#print(zapis_do_worpad(prochazeni_kucharky()))
+
 
 
 
