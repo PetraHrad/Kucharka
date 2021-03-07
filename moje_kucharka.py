@@ -36,16 +36,17 @@ def prochazeni_kucharky():
             return str(recepty[list_nazev_receptu[vyber]])
 
 
-print(prochazeni_kucharky())
+recept = prochazeni_kucharky()
+print(recept)
 
 
-#def zapis_do_worpad(in_recept):
- #   with open("recept.txt", "a") as myFile:
-   #     myFile.write(in_recept)
-    #    myFile.close()
+def zapis_do_worpad(in_recept):
+    with open("recept.txt", "a") as myFile:
+        myFile.write("\n" + in_recept)
+        myFile.close()
 
 
-#print(zapis_do_worpad(prochazeni_kucharky()))
+zapis_do_worpad(recept)
 
 
 
